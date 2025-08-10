@@ -1,0 +1,27 @@
+#login php:
+<?php
+session_start();
+include 'connection.php';
+if(isset($_POST['login']))
+{
+	if(!empty($_POST['civilId'])&&
+	!empty($_POST['userName']))
+	{
+	$civilId=$_POST['civilId'];
+	$userName=$_POST['userName'];
+	$stmt = $conn-> query("select * FROM registeration where civilId='$civilId' and userName='$userName'");
+	$stmt-> execute();
+	$row = $stmt-> fetch(PDO::FETCH_ASSOC);
+	$n=$stmt->rowCount();
+			if($n>0){
+				$_SESSION['civilId']=$civilId;
+				header("Location:view.php");
+			}
+			else
+				echo"civilId/userName is incorrect";
+	}
+	else
+		echo"please fill all the fielde";
+}
+?>
+

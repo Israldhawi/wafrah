@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upcoming Installments</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="nav">
+  <ul id="list">
+    <li class="link"><a href="index.php"><img src='./pic/logo.jpeg' alt='Logo' class='logo'> Home</a></li>
+    <li class="link"><a href="login.php">Login</a></li>
+    <li class="link"><a href="create.php">Create Account</a></li>
+  </ul>
+  <hr>
+</div>
+
+<main>
+  <div class="content">
+    <h2 style="color:#103775; text-align:left">Wafrah</h2>
+    <a href="login.php"><button class="btn">Login <i class="fa-solid fa-arrow-right"></i></button></a>
+  </div>
+
+<div class="swiper-container" style="transform: translateX(-260px); color:#103775; border: 2px solid #103775; border-radius: 10px; padding: 20px;">
+  <div class="swiper">
+    <div class="slide-content" style="max-width: 900px; padding: 30px;">
+      <p><h2 style="color:#103775;">Association Upcoming Installments</h2><br>
+	<table>
+    <thead>
+      <tr>
+        <th>Installment #</th>
+        <th>Member Name</th>
+        <th>Due Date</th>
+        <th>Amount</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="upcoming"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="overdue"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="upcoming"></td>
+      </tr>
+    </tbody>
+  </table>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="swiper-pagination"></div>
+  
+  <div class="circle"></div>
+</main>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
+  
+  <footer style="text-align:center; color:#FA28C1;background: black; opacity: 0.7;">
+    <ul class="wrapper">
+        <li class="icon facebook">
+          <span class="tooltip">Facebook</span>
+          <span><i class="fab fa-facebook-f"></i></span>
+        </li>
+        <li class="icon twitter">
+          <span class="tooltip">Twitter</span>
+          <span><i class="fab fa-twitter"></i></span>
+        </li>
+        <li class="icon instagram">
+          <span class="tooltip">Instagram</span>
+          <span><i class="fab fa-instagram"></i></span>
+        </li>
+        <li class="icon github">
+          <span class="tooltip">Github</span>
+          <span><i class="fab fa-github"></i></span>
+        </li>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><i class="fab fa-youtube"></i></span>
+        </li>
+      </ul><br><br>
+<ol style="font-size:13px; color:white;">
+  This website developed by:
+  <li style="color:white;">Esraa Abdullah Al-dhawi (36S2336740)</li>
+  <li style="color:white;">Afnan Abdullah Anbar AL-qinqi (36J2248)</li>
+  <li style="color:white;">Romisa Hamood Al-ashaykhi (36S2175) </li>
+  <li style="color:white;">ALBayan hamdan AL-Mushaqri (36s2149) </li>
+  <li style="color:white;">Maather saeed AL-sharji (36J2246) </li>
+  
+  </ul>
+      
+ 
+  </footer>
+</body>
+</html>
